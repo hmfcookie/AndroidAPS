@@ -1,9 +1,138 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- MedtrumPump -->
+    <string name="medtrum">Medtrum</string>
+    <string name="medtrum_pump_shortname">MT</string>
+    <string name="medtrum_pump_description">Medtrum Nano和Medtrum 300U 的泵集成</string>
+    <string name="medtrum_pump_setting">Medtrum 泵设置</string>
+    <string name="pump_error">泵错误: %1$s !! </string>
+    <string name="pump_warning">泵警告: %1$s </string>
+    <string name="pump_is_suspended">泵已暂停</string>
+    <string name="pump_is_suspended_hour_max">由于超过每小时最大输注量，泵被暂停</string>
+    <string name="pump_is_suspended_day_max">由于超过每天最大输注量，泵被暂停</string>
+    <string name="patch_not_active">储药贴未激活</string>
+    <string name="pump_setting_failed">给泵设置用户配置失败!</string>
+    <string name="pump_sync_error">从泵同步历史时出错，记录已跳过。 检查治疗选项卡以确认输注是否同步正确。请稍候，并且如果返回时发生错误，更换储药贴或泵体。</string>
+
     <!-- overview fragment -->
+    <string name="ble_status_label">蓝牙状态</string>
+    <string name="last_connection_label">上次连接</string>
+    <string name="active_bolus_label">激活的输注</string>
+    <string name="pump_state_label">泵状态</string>
+    <string name="active_alarms_label">激活的告警</string>
+    <string name="reservoir_level"> %.2f U</string>
+    <string name="battery_voltage"> %.2f V</string>
+    <string name="basal_type_label">基础类型</string>
+    <string name="basal_rate_label">基础率</string>
+    <string name="current_basal_rate"> %.2f U/h</string>
+    <string name="pump_type_label">泵类型</string>
+    <string name="fw_version_label">FW 版本</string>
+    <string name="patch_no_label">储药贴编号</string>
+    <string name="patch_expiry_label">储药贴过期</string>
+    <string name="refresh_label">刷新</string>
+    <string name="reset_alarms_label">重置告警</string>
+    <string name="change_patch_label">更换储药贴</string>
+    <string name="requested_by_user" comment="26 characters max for translation">用户已请求</string>
+    <string name="expiry_not_enabled">过期未启用</string>
+
     <!-- Alarm strings -->
+    <string name="alarm_none">无</string>
+    <string name="alarm_pump_low_battery">泵电量低</string>
+    <string name="alarm_pump_low_reservoir">泵胰岛素量低</string>
+    <string name="alarm_pump_expires_soon">泵即将过期</string>
+    <string name="alarm_low_bg_suspended">低血糖停止</string>
+    <string name="alarm_low_bg_suspended2">低血糖停止2</string>
+    <string name="alarm_auto_suspended">自动停止</string>
+    <string name="alarm_hourly_max_suspended">超每小时最大剂量已停止</string>
+    <string name="alarm_daily_max_suspended">超过每天最大剂量已停止</string>
+    <string name="alarm_suspended">已停止</string>
+    <string name="alarm_paused">已暂停</string>
+    <string name="alarm_occlusion">堵塞</string>
+    <string name="alarm_expired">已过期</string>
+    <string name="alarm_reservoir_empty">储药器空</string>
+    <string name="alarm_patch_fault">储药贴错误</string>
+    <string name="alarm_patch_fault2">储药贴错误 2</string>
+    <string name="alarm_base_fault">泵体错误</string>
+    <string name="alarm_battery_out">电量耗尽</string>
+    <string name="alarm_no_calibration">No calibration</string>
+    <string name="pump_time_update_failed">Failed to update pump timezone, snooze message and refresh manually.</string>
+    <string name="bolus_error">Bolus error</string>
+
     <!-- wizard-->
+    <string name="retry">重试</string>
+    <string name="next">下一步</string>
+    <string name="discard">放弃</string>
+
+    <string name="step_prepare_patch">激活储药贴</string>
+    <string name="step_prepare_patch_connect">连接并填充</string>
+    <string name="step_prime">充盈</string>
+    <string name="step_priming">充盈中…</string>
+    <string name="step_priming_complete">充盈完成</string>
+    <string name="step_attach">粘贴储药贴</string>
+    <string name="step_activate">粘贴中…</string>
+    <string name="step_activate_complete">激活完成</string>
+    <string name="step_deactivate">停用储药贴</string>
+    <string name="step_deactivating">停用中…</string>
+    <string name="step_deactivate_complete">储药贴已停用</string>
+    <string name="step_retry_activation">激活正在处理中</string>
+    <string name="unexpected_state">未知状态: %1$s</string>
+    <string name="no_profile_selected">未选择配置文件. 请选择配置文件并重试.</string>
+    <string name="no_sn_in_settings">未知序列号，请在设置中输入泵体序列号并重试</string>
+
+    <string name="base_serial">泵体序列号: %1$X</string>
+    <string name="patch_begin_activation">未激活储药贴. 请点击 <b>下一步</b> 开始激活流程.</string>
+    <string name="patch_not_active_note">点击下一步之前泵体严禁连接储药贴!</string>
+    <string name="connect_pump_base">泵体连接至新储药贴, 排气并填充胰岛素, 然后点击 <b>下一步</b>.</string>
+    <string name="note_min_70_units">注意: 激活至少需要70单位胰岛素.</string>
+    <string name="do_not_attach_to_body">当前先不要将储药贴粘贴到身体上.</string>
+    <string name="half_press_needle">半按下进针按钮. 然后点击 <b>下一步</b> 开始充盈.</string>
+    <string name="wait_for_priming">请等待充盈结束.</string>
+    <string name="priming_error">充盈失败, 点击 <b>重试</b> 进行重试.</string>
+    <string name="press_next">点击 <b>下一步</b> 继续.</string>
+    <string name="press_next_to_start_activation">点击 <b>下一步</b> 开始激活.</string>
+    <string name="remove_safety_lock">移除安全锁. 将泵体粘到身体上. 按下进针按钮.</string>
+    <string name="activating_pump">激活泵体并设置基础率中,请稍后…</string>
+    <string name="activating_error">激活失败, 点击 <b>重试</b> 进行重试.</string>
+    <string name="activating_complete">新储药贴已激活. 剩余 %.2f 单位.</string>
+    <string name="press_OK_to_return">点击 <b>OK</b> 返回主页面.</string>
+
+    <string name="deactivate_sure">确定停用当前储药贴?</string>
+    <string name="cancel_sure">确定取消激活?</string>
+    <string name="medtrum_deactivate_pump_confirm">确定吗? 该操作不可逆!!</string>
+    <string name="press_next_or_cancel">点击 <b>下一步</b> 停用 或者 <b>取消</b> 返回主页面.</string>
+    <string name="deactivating_pump">停用储药贴. 请稍后.</string>
+    <string name="deactivating_error">停用失败, 点击 <b>放弃</b> 忘记储药贴.</string>
+    <string name="retract_needle">弹出针. 从身体上移除.</string>
+    <string name="remove_base_discard_patch">拆下泵体病妥善处理使用过的储药贴.</string>
+    <string name="press_next_or_OK">点击 <b>OK</b> 返回主页面. 点击 <b>下一步</b> 开始激活一个新的储药贴.</string>
+
+    <string name="activation_in_progress">糟糕! 出错了, 看起来已经有一个激活在处理中.</string>
+    <string name="press_retry_or_discard">点击 <b>下一步</b> 恢复激活 或者 <b>放弃</b> 重置激活状态.</string>
+    <string name="reading_activation_status">请稍等, 正在从泵读取激活状态.</string>
+
     <!-- settings-->
+    <string name="enable_pump_unreachable_alert_summary">Unreachable alert forced enabled, because Medtrum patch can fail and be unreachable.</string>
+    <string name="pump_unreachable_threshold_minutes_summary">Advised to set to 30 minutes, because Medtrum patch can fail and be unreachable.</string>
+    <string name="sn_input_title">序列号</string>
+    <string name="sn_input_summary">输入你的泵体序列号</string>
+    <string name="sn_input_invalid">无效的序列号!</string>
+    <string name="pump_unsupported">Pump untested: %1$d! Please contact us at discord or github for support</string>
+    <string name="alarm_setting_title">告警设置</string>
+    <string name="alarm_setting_summary">Select your preferred pump alarm settings.</string>
+    <string name="pump_warning_notification_title">Notification on pump warning</string>
+    <string name="pump_warning_notification_summary">Show notification on non critical pump warnings: low battery, low reservoir (20 units) and expires soon. Recommended to leave enabled when pump alarms are set to silent.</string>
+    <string name="pump_warning_expiry_hour_title">Pump expiry warning [hours]</string>
+    <string name="pump_warning_expiry_hour_summary">Show notification on specified hour after activation.</string>
+    <string name="patch_expiration_title">Patch Expiration</string>
+    <string name="patch_expiration_summary">When enabled, the patch will expire after 3 days, with a grace period of 8 hours after that.</string>
+    <string name="hourly_max_insulin_title">Hourly Maximum Insulin [Units]</string>
+    <string name="hourly_max_insulin_summary">Specify the maximum units of insulin allowed per hour. If exceeded, the pump will suspend.</string>
+    <string name="daily_max_insulin_title">Daily Maximum Insulin [Units]</string>
+    <string name="daily_max_insulin_summary">Specify the maximum units of insulin allowed per day. If exceeded, the pump will suspend.</string>
+
     <!-- treatment state-->
+    <string name="getting_pump_status">正在获取泵状态</string>
+    <string name="getting_bolus_status">正在获取输注状态</string>
+    <string name="getting_temp_basal_status">正在获取临时基础率状态</string>
+    <string name="setting_pump_settings">正在设置用户选项</string>
 </resources>
